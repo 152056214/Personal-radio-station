@@ -1,0 +1,33 @@
+<loading hidden="{{loadingHidden}}">
+        加载中...
+</loading>
+<!--title-->
+<view class="detail-top">
+    <view class="top-image-left">
+        <image wx:if="{{fileUrl+albummes.image}}"src="{{headimg}}"  style="height:200rpx; width:200rpx;"></image>
+    </view>
+    <view class="top-text-right">
+        <text style="font-size: 30rpx; margin-top:12rpx;">{{albummes.album}}</text>
+        <label style="margin-top:32rpx;">
+            主播:<text style="color:deepskyblue">{{albummes.author}}</text>
+        </label>
+        
+        <view class='like'  data-key="{{albummes.authorid}}" bindtap='like'>{{islike}}</view>
+    </view>
+</view>
+
+
+<view style="background:white; margin:20rpx 0rpx;">节目</view>
+<view wx:for="{{audioList}}" wx:key="{{item}}" class="detail-listview">
+  <!-- <navigator url="../play/play?id={{item.audioid}}">
+    <audio poster="{{fileUrl+item.image}}" author="{{item.author}}" name="{{item.title}}"             
+      loop="true" controls="true" style="width:100%;"></audio>
+  </navigator> -->
+  <view data-key="{{item.audioid}}" bindtap='doplay'>
+    <audio poster="{{fileUrl+item.image}}" author="{{item.author}}" name="{{item.title}}"             
+      loop="true" controls="true" style="width:100%;"></audio>
+  </view>
+</view>
+
+    
+    

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+
+<scroll-view>
+  <view wx:if="{{voices}}" class="common-list" style="margin-bottom:120rpx;">
+    <block  wx:for="{{voices}}">
+      <view class="board">
+          <view class="cell"  >
+            <view class="cell-bd"> 
+              <view  class="date">存储路径:{{item.filePath}}</view>
+              <view class='date'>时间：{{item.createTime}}</view>
+              <view  class="date">音频大小:{{item.size}}KB</view>
+              <view class='file-play' data-key="{{item.filePath}}" bindtap='gotoPlay'>播放</view>
+              <view class='file-upload' data-key="{{item.filePath}}" bindtap='upload'>上传</view>
+              <view class='file-remove' data-key="{{item.filePath}}" bindtap='remove'>删除</view>
+            </view>  
+          </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+ <view class="record-style">
+  <button class="btn-style-1" bindtap="kaishi">开始 录音</button> 
+ </view>

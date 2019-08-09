@@ -1,0 +1,6 @@
+/* pages/settitle/settitle.wxss */
+.section{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+}

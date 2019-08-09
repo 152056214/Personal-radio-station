@@ -1,0 +1,50 @@
+/* pages/play/play.wxss */
+.first{
+  width: 100%;
+  text-align: center;
+  background-color:blue;
+}
+.first-title{
+  margin: 30rpx;
+}
+.first-img{
+  width: 200rpx;
+  height: 200rpx;
+}
+.bgImage {
+  height: 400rpx;
+  width: 400rpx;
+  border-radius: 50%;
+}
+
+.music {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+}
+
+.playType {
+  border-radius: 0%;
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 80rpx;
+}
+
+.classname1 {
+  height: 100rpx;
+  padding-top: 50rpx;
+  text-align: center;
+}
+
+.classname2 {
+  height: 100rpx;
+  margin-top: 20rpx;
+  background-color: white;
+}

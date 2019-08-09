@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/tuijian/tuijian",
+    "pages/newalbum/newalbum",
+    "pages/settitle/settitle",
+    "pages/mine/mine",
+    "pages/audio/audio",
+    "pages/logs/logs",
+    "pages/play/play",
+    "pages/find/find",
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window":{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "个人电台",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "borderStyle": "white",
+    "backgroundColor": "green",
+    "color": "#fff",
+    "selectedColor": "black",
+    "list":[{
+      "pagePath": "pages/tuijian/tuijian",
+      "text": "推荐"
+    },{
+      "pagePath": "pages/find/find",
+      "text": "发现"
+    },{
+      "pagePath": "pages/play/play",
+      "text": "播放"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的"
+    }]
+  }
+}

@@ -1,0 +1,103 @@
+/**index.wxss**/
+.page{
+  position: relative;
+}
+.speak-style{
+    position: fixed;
+    height: 240rpx;
+    width: 240rpx;
+    left: 200rpx;
+    bottom: 200rpx;
+    border-radius: 20rpx;
+    margin: 50% auto;
+    background: #26A5FF;
+}
+.item-style{
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.text-style{
+    text-align: center;
+
+}
+.record-style{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 120rpx;
+    width: 100%;
+}
+.upload-style{
+   position: fixed;
+    bottom: 120rpx;
+    left: 0;
+    height: 120rpx;
+    width: 100%;
+}
+.btn-style-1{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: 90%;
+}
+.btn-style-2{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: 40%;
+}
+
+.sound-style{
+  position: absolute;
+  width: 74rpx;
+  height:150rpx;
+  margin-top: 45rpx;
+  margin-left: 83rpx;
+}
+
+
+.board {
+  overflow: hidden;
+  border-bottom: 2rpx solid #26A5FF;  
+  position: relative;
+}
+/*列布局*/
+.cell{
+    display: flex;
+    margin: 20rpx;
+}
+.cell-hd{
+    margin-left: 10rpx;
+    color: #885A38;
+}
+.cell .cell-bd{
+    flex:1;
+    position: relative;
+   
+}
+/**只显示一行*/
+.date{
+    font-size: 30rpx;
+    text-overflow: ellipsis; 
+    white-space:nowrap;
+    overflow:hidden; 
+}
+.file-play{
+  position: absolute;
+  background-color: white;
+  left: 500rpx;
+  bottom: 0;
+  font-size: 24rpx;
+}
+.file-upload{
+  position: absolute;
+  background-color: white;
+  left: 600rpx;
+  bottom: 0;
+  font-size: 24rpx;
+}
+.file-remove{
+  position: absolute;
+  background-color: white;
+  left: 680rpx;
+  bottom: 0;
+  font-size: 24rpx;
+}

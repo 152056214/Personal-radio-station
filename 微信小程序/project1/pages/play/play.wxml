@@ -1,0 +1,12 @@
+<view class="music">
+  <image animation="{{animationData}}" class="bgImage" src="{{headimg}}"></image>
+</view>
+<view class="classname1">
+  {{audiomes.album+audiomes.title}}
+</view>
+<progress stroke-width="8" percent="{{percent}}" color="green" />
+<view class="classname2">
+  <view class="music">
+    <image class="bgImage con" src="{{playOrPause}}" bindtap="play"></image>
+  </view>
+</view>

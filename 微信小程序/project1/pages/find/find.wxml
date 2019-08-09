@@ -1,0 +1,22 @@
+<!--pages/find/find.wxml-->
+<view class='content-item'>
+    <view class="title-item">
+        <label>我的关注</label>
+    </view>
+
+    <view class="list-item">
+        <view class="list-itemcontent" wx:for="{{guess.list}}" wx:key="{{item}}">
+          <navigator url="../detail/detail?id={{item.userid}}">
+            <view class='user'>
+                <image class='album-img' src="{{fileUrl+item.image}}"></image>
+                <view class="album-mes">
+                    <text>专辑：{{item.album}}\n</text>
+                    <text>作者：{{item.author}}\n</text>
+                    <text>分类：{{item.Category}}</text>
+                </view>
+            </view>
+          </navigator>
+          <view class='unlike' data-key="{{item.userid}}" bindtap='unlike'>取消关注</view>
+        </view>
+    </view>
+</view>

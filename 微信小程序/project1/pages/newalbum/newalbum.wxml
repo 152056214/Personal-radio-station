@@ -1,0 +1,26 @@
+<!--pages/newalbum/newalbum.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="section">
+    <view class="section__title">姓名</view>
+    <input name="name" placeholder="姓名" />
+  </view>
+  <view class="section">
+    <view class="section__title">专辑名</view>
+    <input name="album" placeholder="专辑名" />
+  </view>
+  <view class="section">
+    <view class="section__title">分类</view>
+    <input name="category" placeholder="分类" />
+  </view>
+  <view class="section">
+    <button bindtap='tupian'>选择图片</button>
+  </view>
+  <view class="section">
+    <input name="picture" class="section__title"/><view>{{picture}}</view>
+  </view>
+  
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
